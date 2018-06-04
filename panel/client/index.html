@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <title>Update Weather</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <script src="./CSInterface.js"></script>
+  <script src="./index.js"></script>
+  <div id="root">
+    <div class="tabs">
+      <div class="tab" id="tab1" data-for="page1" data-selected="yes">Simple</div>
+      <div class="tab" id="tab2" data-for="page2" data-selected="no">Complex</div>
+    </div>
+    <div class="pages">
+      <div class="page" id="page1">
+        <label>
+          <span>Location:</span>
+          <input type="text" id="loc" size=20 />
+        </label>
+        <button id="fetch">Fetch Weather</button>
+        <div id="output"></div>
+      </div>
+      <div class="page" id="page2">
+        <label>
+          <span>Mode:</span>
+          <select id="mode">
+            <option value="create">Create</option>
+            <option value="selection">Selection</option>
+            <option value="all">All</option>
+          </select>
+        </label>
+        <label id="create">
+          <span>Location:</span>
+          <input type="text" id="location" size=20 />
+        </label>
+        <button id="go">Go</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

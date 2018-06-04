@@ -117,7 +117,7 @@ function getLayers(whichLayer) {
             } else {
                 forEach(activeLayer.layers || [], function(item) { layerStack.push(item); });
                 forEach(activeLayer.artLayers || [], function(item) { layerStack.push(item); });
-                forEach(activeLayer.LayerSets || [], function(item) { layerStack.push(item); });
+                forEach(activeLayer.layerSets || [], function(item) { layerStack.push(item); });
             }
         }
     }

@@ -9,7 +9,8 @@
             "request": "attach",
             "name": "Attach to Panel",
             "port": 8088,
-            "webRoot": "${workspaceFolder}/panel/client"
+            "webRoot": "${workspaceRoot}",
+            "sourceMaps": false
         },
-    ]
+    ],
 }
